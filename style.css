@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap');
+
+body {
+  margin-top: 100px;
+  background-color: hsl(0, 0%, 5%);
+  font-size: 85%;
+}
+
+
+/*HEADER*/
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  line-height: 80px;
+  background-color: hsl(0, 0%, 5%);
+  color: hsl(317, 0%, 94%);
+}
+header * {
+  display: inline;
+  height: 80px;
+}
+header ol {
+  padding: 0;
+}
+header li {
+  margin-left: 60px;
+}
+
+
+/* CONTENTS MARGIN*/
+section {
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+
+/*FOOTER*/
+footer {
+  display: flex;
+  background-color: hsl(0, 0%, 5%);
+  color: hsl(317, 0%, 94%);
+    line-height: 40px;
+}
+footer * {
+  display: inline;
+  height: 20px;
+}
+
+
+/*HORIZONTAL RULER*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid hsl(0, 0%, 5%);
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+/*FONT FAMILIES*/
+h1, h2, h3, h4 {
+  font-family: 'Archivo Black', sans-serif;
+  color: hsl(317, 0%, 94%);
+}
+p, li, a, h5 {
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(317, 0%, 94%);
+}
+h1 {
+  margin-left: 30px;
+}
+
+
+/*LINKS*/
+a {
+  color: #ffab33;
+  text-decoration: none;
+}
+
+
+/*FONT SIZES*/
+h1 {
+  font-size: 2.8em;
+}
+h2 {
+  font-size: 2.3em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.4em;
+  text-align: right;
+}
+h5 {
+  font-size: 1.3em;
+  font-weight: regular;
+}
+p {
+  font-size: 1.4em;
+}
+a {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+li {
+  font-size: 1.3em;
+}
