@@ -77,9 +77,13 @@ h1 {
 
 
 /*LINKS*/
-a {
+a:link {
   color: #ffab33;
   text-decoration: none;
+}
+
+a:hover {
+  color: #ffab33;
 }
 
 
