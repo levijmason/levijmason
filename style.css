@@ -23,7 +23,7 @@ header * {
   display: inline;
   height: 80px;
 }
-header ol {
+header ol { 
   padding: 0;
 }
 header li {
