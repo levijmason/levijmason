@@ -220,7 +220,7 @@ form input[type="text"] {
 
 form textarea {
   width: 100%;
-  color: hsl(317, 0%, 94%);
+  color: hsl(0, 0%, 5%);
   font-size: 20px;
   margin-bottom: 20px;
 }
