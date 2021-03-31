@@ -133,16 +133,16 @@ main a {
 }
 
 main a:link {
-  color: #38786a;
+  color: #fed8b1;
 }
 main a:visited {
-  color: #38786a;
+  color: #fed8b1;
 }
 main a:hover {
-  color: #403933;
+  color: #77dd77;
 }
 a:active {
-  color: #403933;
+  color: #77dd77;
 }
 
 a:hover {
