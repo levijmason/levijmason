@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap");
+
+.App {
+  background-color: hsl(0, 0%, 5%);
+  font-family: "Open Sans", sans-serif;
+  color: hsl(317, 0%, 94%);
+  padding-top: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+/* ---  NAVIGATION.JSX --- */
+.Navigation {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: hsl(0, 0%, 5%);
+}
+.navbar {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+/* logo image & social icons */
+nav img {
+  padding-right: 12%;
+}
+.avi-logo {
+  height: 80px;
+}
+.social {
+  height: 38px;
+  padding-right: 44%;
+}
+/* site title */
+.navbar-brand {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 200%;
+}
+/* links */
+.navbar-nav {
+  padding-left: 25%;
+}
+.nav-link {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(317, 0%, 94%);
+}
+
+/* --- HEADER.JSX --- */
+.Header {
+  margin: 4%;
+  padding-top: 2%;
+}
+
+/* --- ABOUT.JSX --- */
+.About {
+  margin: 4%;
+  padding-top: 4%;
+}
+
+/* --- PROJECT.JSX --- */
+.Projects {
+  margin: 4%;
+  padding-top: 4%;
+}
+
+.card {
+  border-radius: 3%;
+}
+.card-img {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+/* --- CONTACT --- */
+.Contact {
+  margin: 4%;
+  padding-top: 2%;
+}
+
+/* --- FOOTER --- */
+.Footer {
+  margin-left: 4%;
+  margin-right: 4%;
+
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+/* ---  TYPOGRAPGHY --- */
+h1 {
+  font-size: 28px;
+  font-family: "Archivo Black", sans-serif;
+  color: hsl(317, 0%, 94%);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "Archivo Black", sans-serif;
+  color: hsl(317, 0%, 94%);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Archivo Black", sans-serif;
+  color: hsl(317, 0%, 94%);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "Archivo Black", sans-serif;
+  color: hsl(317, 0%, 94%);
+  font-weight: 500;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(317, 0%, 94%);
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
