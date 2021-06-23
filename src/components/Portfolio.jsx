@@ -266,7 +266,6 @@ function Portfolio() {
             <div class="card-deck">
               {/* GRUBDASH */}
               <div class="card text-white bg-dark">
-                {/* <img src={ljmDev} class="card-img" alt="Done sponge" /> */}
                 <div class="card-body">
                   <h5 class="card-title">GrubDash</h5>
                   <h6 class="card-subtitle mb-2 text-muted">
@@ -297,7 +296,6 @@ function Portfolio() {
 
               {/* WE LOVE MOVIES */}
               <div class="card text-white bg-dark">
-                {/* <img src={pomodoro} class="card-img" alt="Done sponge" /> */}
                 <div class="card-body">
                   <h5 class="card-title">We Love Movies</h5>
                   <h6 class="card-subtitle mb-2 text-muted">
