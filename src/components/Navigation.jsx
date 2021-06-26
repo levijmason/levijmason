@@ -48,7 +48,12 @@ function Navigation() {
 
         <div class="navbar socials">
           <a href="https://www.github.com/levijmason">
-            <img src={github} alt="GitHub logo" class="social"/>
+            <img 
+              src={github} 
+              alt="GitHub logo" 
+              class="social" 
+              target="_blank"
+              rel="noreferrer"/>
           </a>
 
           <a href="https://www.linkedin.com/levijmason">
@@ -56,6 +61,8 @@ function Navigation() {
               src={linkedin}
               alt="LinkedIn logo"
               class="social"
+              target="_blank"
+              rel="noreferrer"
             />
           </a>
 
@@ -64,6 +71,8 @@ function Navigation() {
               src={instagram}
               alt="Instagram logo"
               class="social"
+              target="_blank"
+              rel="noreferrer"
             />
           </a>
 
@@ -72,6 +81,8 @@ function Navigation() {
               src={twitter}
               alt="Twitter logo"
               class="social"
+              target="_blank"
+              rel="noreferrer"
             />
           </a>
         </div>
