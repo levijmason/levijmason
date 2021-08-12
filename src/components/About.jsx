@@ -8,8 +8,9 @@ function About() {
         <br />
         <div class="lead">
           <p>
-            I'm currently a student going through the Thinkful Immersive
-            Engineering Course. In college I got my degree in music business.
+            I'm a recent graduate from the Thinkful Engineering Immersion Course
+            where I learned fullstack development using the PERN stack. In
+            college I got my degree in music business.
           </p>
           <br />
           <p>
