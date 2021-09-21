@@ -56,7 +56,7 @@ function Navigation() {
               rel="noreferrer"/>
           </a>
 
-          <a href="https://www.linkedin.com/levijmason">
+          <a href="https://www.linkedin.com/in/levijmason">
             <img
               src={linkedin}
               alt="LinkedIn logo"
