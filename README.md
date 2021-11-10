@@ -1,9 +1,15 @@
 # Hey there! 👋
-My name is Levi Mason, and I'm a junior developer currently going through the Thinkful Engineering Immersion course.
+My name is Levi Mason, and I'm a junior developer who has recently completed the Thinkful Engineering Immersion bootcamp.
 
 ## Tech Stack
-Once I've completed the course I'll be working in
+The stack I have the most knowledge in is:
 * PostgreSQL
 * Express.js 
 * React.js
 * Node.js
+
+## Current Study
+Right now I'm working on a to-do app using
+* React.js
+* MongoDB Realm
+* GraphQL
