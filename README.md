@@ -11,3 +11,7 @@ The stack I have the most knowledge in is:
 ## Current Study
 Right now I'm working on a to-do app using
 * Next.js
+* Prisma
+* MongoDB
+
+``` clerk ```
