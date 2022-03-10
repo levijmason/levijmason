@@ -3,7 +3,7 @@ My name is Levi Mason, and I'm a junior developer who has recently completed the
 
 ## Tech Stack
 The stack I have the most knowledge in is:
-* PostgreSQL
+* MongoDB
 * Express.js 
 * React.js
 * Node.js
