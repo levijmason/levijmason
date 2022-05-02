@@ -1,4 +1,4 @@
-# Hey there! 👋
+# Hey there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
 My name is Levi Mason, and I'm a junior developer who has recently completed the Thinkful Engineering Immersion bootcamp.
 
 ## Tech Stack
