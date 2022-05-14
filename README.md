@@ -1,5 +1,5 @@
 # Hey there!  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
-My name is Levi Mason and I have about 2 years experience in web development and design, most of which has been focused on creating websites for independent musicians and entertainment businesses. I'm interested in music, independent films, and using technology to create immersive art experiences.
+My name is Levi Mason. I have about 2 years experience in web development and design, most of which has been focused on creating websites for independent musicians and entertainment businesses. I'm interested in music, independent films, and using technology to create immersive art experiences.
 
 ![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -34,8 +34,6 @@ My name is Levi Mason and I have about 2 years experience in web development and
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 
 <!-- ## Reach out to me!
-
-![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
 
 ![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)
 ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white) -->
