@@ -1,93 +1,117 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useTheme as useNextTheme } from "next-themes";
 
-import logo from "../img/me.PNG";
-import github from "../img/GitHub.PNG";
-import instagram from "../img/Instagram.PNG";
-import twitter from "../img/Twitter.PNG";
-import linkedin from "../img/LinkedIn.PNG";
+import {
+  Container,
+  Row,
+  Col,
+  Text,
+  Spacer,
+  Switch,
+  useTheme,
+} from "@nextui-org/react";
 
-function Navigation() {
+import logo from "../img/me.png";
+import github from "../img/GitHub.png";
+import instagram from "../img/Instagram.png";
+import twitter from "../img/Twitter.png";
+import linkedIn from "../img/LinkedIn.png";
+
+const NavBar = () => {
+  const { setTheme } = useNextTheme();
+  const { isDark } = useTheme();
+
   return (
-    <header class="container" className="Navigation">
-      <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md">
+    <header>
+      <nav>
+        <Container fluid>
+          <Spacer />
+          <Row align="center" justify="space-between">
+            {/* Logo & Title */}
+            <Col>
+              <Row justify="flex-start" align="center">
+                <Image
+                  src={logo}
+                  alt="Levi J Mason profile pic"
+                  width={75}
+                  height={75}
+                />
+                <Spacer />
+                <Text
+                  h1
+                  size={40}
+                  weight="bold"
+                >
+                  Levi J Mason
+                </Text>
+              </Row>
+            </Col>
 
-        {/* LOGO */}
+            {/* Nav Links */}
+            <Row justify="center" align="center">
+              <Link href="/">home </Link>
+              <Spacer x={2} />
+              <Link href="/about"> about </Link>
+              <Spacer x={2} />
+              <Link href="/projects"> projects </Link>
+              <Spacer x={2} />
+              <Link href="/contact"> contact</Link>
+            </Row>
 
-        <a class="navbar-brand" href="#home">
-          <img
-            src={logo}
-            alt="Levi J Mason profile pic"
-            class="avi-logo"
-          />
-        </a>
+            <Col>
+              <Row justify="flex-end" align="center">
+                <Link href="https://www.github.com/levijmason">
+                  <Image
+                    src={github}
+                    alt="GitHub logo"
+                    width={36}
+                    height={36}
+                  />
+                </Link>
+                <Spacer x={0.5} />
+                <Link href="https://www.linkedIn.com/in/levijmason">
+                  <Image
+                    src={linkedIn}
+                    alt="linkedIn logo"
+                    width={36}
+                    height={36}
+                  />
+                </Link>
+                <Spacer x={0.5} />
+                <Link href="https://www.instagram.com/levijmason">
+                  <Image
+                    src={instagram}
+                    alt="Instagram logo"
+                    width={36}
+                    height={36}
+                  />
+                </Link>
+                <Spacer x={0.5} />
+                <Link href="https://www.twitter.com/levijmason">
+                  <Image
+                    src={twitter}
+                    alt="Twitter logo"
+                    width={36}
+                    height={36}
+                  />
+                </Link>
 
-        {/* SITE TITLE */}
-
-        <h1 class="navbar-brand">LEVI J MASON</h1>
-
-        {/* NAVIGATION LINKS */}
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#home">
-              home <span class="sr-only">(current)</span>
-            </a>
-            <a class="nav-link" href="#about">
-              about
-            </a>
-            <a class="nav-link" href="#projects">
-              projects
-            </a>
-            <a class="nav-link" href="#contact">
-              contact
-            </a>
-          </div>
-        </div>
-
-        {/* SOCIAL LINKS */}
-
-        <div class="navbar socials">
-          <a href="https://www.github.com/levijmason">
-            <img 
-              src={github} 
-              alt="GitHub logo" 
-              class="social" 
-              target="_blank"
-              rel="noreferrer"/>
-          </a>
-
-          <a href="https://www.linkedin.com/in/levijmason">
-            <img
-              src={linkedin}
-              alt="LinkedIn logo"
-              class="social"
-              target="_blank"
-              rel="noreferrer"
-            />
-          </a>
-
-          <a href="https://www.instagram.com/levijmason">
-            <img
-              src={instagram}
-              alt="Instagram logo"
-              class="social"
-              target="_blank"
-              rel="noreferrer"
-            />
-          </a>
-
-          <a href="https://www.twitter.com/levijmason">
-            <img
-              src={twitter}
-              alt="Twitter logo"
-              class="social"
-              target="_blank"
-              rel="noreferrer"
-            />
-          </a>
-        </div>
+                <Spacer />
+                {/* Theme toggle */}
+                <Switch
+                  checked={isDark}
+                  onChange={(e) =>
+                    setTheme(e.target.checked ? "dark" : "light")
+                  }
+                />
+              </Row>
+            </Col>
+          </Row>
+        </Container>
       </nav>
     </header>
   );
-}
-export default Navigation;
+};
+
+export default NavBar;
