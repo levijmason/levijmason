@@ -14,5 +14,3 @@ Right now I'm working on a to-do app using
 * Prisma
 * Next.js
 * Node.js
-
-Hi Chase
