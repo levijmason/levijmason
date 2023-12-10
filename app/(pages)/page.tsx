@@ -3,7 +3,7 @@ import { Divider } from "@nextui-org/divider";
 
 export default function Home() {
   return (
-    <section className="justify-evenly w-full">
+    <section className="justify-evenly w-full gap-2">
       <h2 className="text-4xl font-bold">Hey there!</h2>
       <br />
       <h3 className="text-2xl">My name is Levi, and</h3>
