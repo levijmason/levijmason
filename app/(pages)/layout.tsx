@@ -1,8 +1,7 @@
-import { Nav } from "@/components/Nav";
-import { StyleProvider } from "@/components/style-provider";
+import "@/app/globals.css";
+import { Footer, StyleProvider, TopNav } from "@/ui/layout/";
 import type { Metadata } from "next";
 import { Unbounded } from "next/font/google";
-import "./globals.css";
 
 const font = Unbounded({ subsets: ["latin"], display: "swap" });
 
@@ -14,14 +13,17 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={`${font.className} bg-primary`}>
         <StyleProvider>
-          <header className="z-50 w-full md:px-20 md:py-4">
-            <Nav />
+          <header className="md:px-20 py-4 z-50 w-full bg-background top-0 sticky">
+            <TopNav />
           </header>
-          <main className="flex flex-col items-center px-32 py-20 min-h-screen w-full">
+          <main className="flex flex-col items-center p-8 md:px-28 min-h-screen w-full bg-background">
             {children}
           </main>
+          <footer className="flex flex-col items-start md:items-center p-8 md:px-28 w-full h-32 bg-background">
+            <Footer />
+          </footer>
         </StyleProvider>
       </body>
     </html>
