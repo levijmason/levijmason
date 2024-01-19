@@ -10,7 +10,7 @@ export default async function Projects() {
       <br />
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {data.map((p: any) => {
-          return <ProjectCard key={p.id} data={p} />;
+          return <ProjectCard key={p.id} data={p} featured={false} />;
         })}
       </div>
     </div>
