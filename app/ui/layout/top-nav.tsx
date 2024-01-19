@@ -126,8 +126,8 @@ export const TopNav = () => {
               router.push(`/${item.toLowerCase()}`);
             };
             return (
-              <>
-                <NavbarMenuItem key={`${item}-${index}`} className={"py-4"}>
+              <div key={`${item}-${index}`}>
+                <NavbarMenuItem className={"py-4"}>
                   <UILink
                     onPress={onPressHandler}
                     color={
@@ -141,7 +141,7 @@ export const TopNav = () => {
                   </UILink>
                 </NavbarMenuItem>
                 <Divider className="rounded-full" />
-              </>
+              </div>
             );
           })}
         </div>
