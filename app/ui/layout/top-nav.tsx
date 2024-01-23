@@ -21,7 +21,7 @@ import { ReactNode, useState } from "react";
 export const TopNav = ({ Socials }: { Socials?: ReactNode }) => {
   const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = ["Projects", "Contact"];
+  const menuItems = ["Tech", "Music", "Contact"];
   const router = useRouter();
 
   return (
@@ -51,7 +51,7 @@ export const TopNav = ({ Socials }: { Socials?: ReactNode }) => {
             />
           )}
           <h1 className="text-2xl md:text-3xl font-extrabold hover:text-primary">
-            Levi J. Mason
+            Levi J Mason
           </h1>
         </NavbarBrand>
       </NavbarContent>
