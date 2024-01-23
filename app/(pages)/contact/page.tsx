@@ -12,7 +12,7 @@ const PLACEHOLDER = {
 
 export default function Contact() {
   return (
-    <section className="w-full flex flex-col space-y-14">
+    <section className="w-full flex flex-col gap-14 py-12 md:px-16">
       <div className="flex flex-col space-y-4">
         <h2 className="text-4xl font-bold pb-4 pt-8">
           Interested in getting in touch? 🤝
