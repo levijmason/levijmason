@@ -16,7 +16,7 @@ export default async function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  const Socials = await await (<SocialLinks />);
+  const Socials = await (<SocialLinks />);
   return (
     <html lang="en">
       <body className={`${font.className} bg-primary`}>
