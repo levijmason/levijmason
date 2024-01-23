@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import { Footer, SocialLinks, StyleProvider, TopNav } from "@/ui/layout/";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Unbounded } from "next/font/google";
 
@@ -30,6 +31,7 @@ export default async function Layout({
             <Footer />
           </footer>
         </StyleProvider>
+        <Analytics />
       </body>
     </html>
   );
