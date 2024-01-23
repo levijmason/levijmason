@@ -16,12 +16,12 @@ import NextImage from "next/image";
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
-export const TopNav = () => {
+export const TopNav = ({ Socials }: { Socials?: ReactNode }) => {
   const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = ["Projects", "Resume", "Contact"];
+  const menuItems = ["Projects", "Contact"];
   const router = useRouter();
 
   return (
@@ -56,7 +56,7 @@ export const TopNav = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden md:flex">
+      <NavbarContent justify="center" className="hidden md:flex">
         <div className="flex space-x-6 py-3 px-6 bg-default-100 border-2 border-transparent rounded-full">
           {menuItems.map((item, index) => (
             <NavbarItem key={`${item}-${index}`}>
@@ -78,7 +78,9 @@ export const TopNav = () => {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <div className="hidden md:flex">
+        <div className="hidden md:flex md:flex-row justify-between items-center gap-5">
+          {Socials}
+          <Divider orientation="vertical" className="h-10" />
           <ThemeSwitcher />
         </div>
         <NavbarMenuToggle
@@ -118,8 +120,8 @@ export const TopNav = () => {
         />
       </NavbarContent>
 
-      <NavbarMenu className="py-20 gap-6">
-        <div className="flex flex-col pl-4">
+      <NavbarMenu className="py-20 gap-8">
+        <div className="flex flex-col pl-4 gap-4">
           {menuItems.map((item, index) => {
             const onPressHandler = () => {
               setIsMenuOpen(false);
@@ -145,7 +147,11 @@ export const TopNav = () => {
             );
           })}
         </div>
-        <ThemeSwitcher />
+        <div className="flex flex-row justify-between items-center">
+          {Socials}
+          <Divider orientation="vertical" className="h-10" />
+          <ThemeSwitcher />
+        </div>
       </NavbarMenu>
     </Navbar>
   );
