@@ -1,5 +1,5 @@
 import { createDirectus, rest } from "@directus/sdk";
 
-const cms = createDirectus(`${process.env.CMS_URL}`).with(rest());
+const cms = createDirectus("https://directus.levijmason.dev").with(rest());
 
 export default cms;
