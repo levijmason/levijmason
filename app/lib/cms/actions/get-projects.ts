@@ -3,7 +3,7 @@
 import cms from "@/lib/cms/client";
 import { readItems } from "@directus/sdk";
 
-interface Project {
+export interface Project {
   status: "published" | "draft";
   name: string;
   company: string;
@@ -11,8 +11,9 @@ interface Project {
   tech_stack: Array<string>;
   code_link: string;
   preview_link: string;
-  images: Array<string>;
+  images: Array<{ id: string; projects_id: string }>;
   featured?: boolean;
+  cover: any;
 }
 
 export async function getProjects(): Promise<Array<Project>> {
