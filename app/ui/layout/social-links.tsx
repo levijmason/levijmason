@@ -1,8 +1,10 @@
-import { Links } from "@/app/lib/cms/actions";
+import { Links, getLinks } from "@/app/lib/cms/actions";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
 
-export const SocialLinks = ({ links }: { links: Links }) => {
+export const SocialLinks = async () => {
+  const links = await getLinks();
+
   const Icon = ({ data }: { data: string }) => {
     const iconClassName = "w-6 h-6 hover:fill-primary";
     switch (data) {
@@ -156,7 +158,6 @@ export const SocialLinks = ({ links }: { links: Links }) => {
               variant="light"
               href={link}
               target="_blank"
-              // className="border-2 border-transparent hover:border-primary bg-default-100 p-2"
             >
               <Icon data={key} />
             </Button>
