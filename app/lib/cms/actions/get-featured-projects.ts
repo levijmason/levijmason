@@ -11,8 +11,9 @@ export interface Project {
   tech_stack: Array<string>;
   code_link: string;
   preview_link: string;
-  images: Array<string>;
+  images: Array<{ id: string; projects_id: string }>;
   featured?: boolean;
+  cover: any;
 }
 
 export async function getFeaturedProjects(): Promise<Array<Project>> {
