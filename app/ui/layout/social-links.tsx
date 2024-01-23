@@ -23,7 +23,6 @@ export const SocialLinks = async () => {
             />
           </svg>
         );
-
       case "spotify":
         return (
           <svg
