@@ -7,7 +7,7 @@ export const Footer = async () => {
       <Divider className="my-14 rounded-full" />
       <SocialLinks />
       <p className="text-foreground pt-12 pb-16">
-        <b>©</b> {new Date().getFullYear()}, <b>Levi J. Mason</b>
+        <b>©</b> {new Date().getFullYear()}, <b>Levi J Mason</b>
       </p>
     </footer>
   );

@@ -8,7 +8,7 @@ import { Unbounded } from "next/font/google";
 const font = Unbounded({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Levi J. Mason",
+  title: "Levi J Mason",
   description: "Technology and music business consultant",
 };
 
