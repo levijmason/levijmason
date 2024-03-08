@@ -2,6 +2,7 @@
 
 import { ContactForm } from "@/app/ui/features/contact-form";
 import { sendContactEmail } from "@/lib/emails/";
+import Link from "next/link";
 
 const PLACEHOLDER = {
   name: "Peter Gregory || Founder",
@@ -16,20 +17,21 @@ export default function Contact() {
       <div className="flex flex-col space-y-4">
         <h2 className="text-4xl font-bold pb-4 pt-8">
           Interested in getting in touch? 🤝
-        </h2>
-        {/* create email link with subject */}
-        
+        </h2>        
 
         <p>
           Feel free to email me at {" "}
-          <a
+          <Link
           href="mailto:hey@levijmason.dev"
-          className="font-semibold text-primary-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-normal underline leading-loose tracking-wide text-foreground hover:text-primary"
         >hey@levijmason.dev
-        </a>, and I&apos;ll get back to
+        </Link>, and I&apos;ll get back to
           you as soon as possible!
         </p>
       </div>
+      {/* TODO: Update sendContactEmail to use latest Resend instructions */}
       {/* <ContactForm action={sendContactEmail} placeholders={PLACEHOLDER} /> */}
     </section>
   );
