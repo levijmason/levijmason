@@ -17,12 +17,20 @@ export default function Contact() {
         <h2 className="text-4xl font-bold pb-4 pt-8">
           Interested in getting in touch? 🤝
         </h2>
+        {/* create email link with subject */}
+        
+
         <p>
-          Feel free to reach out using the form below, and I&apos;ll get back to
+          Feel free to email me at {" "}
+          <a
+          href="mailto:hey@levijmason.dev"
+          className="font-semibold text-primary-500 hover:underline"
+        >hey@levijmason.dev
+        </a>, and I&apos;ll get back to
           you as soon as possible!
         </p>
       </div>
-      <ContactForm action={sendContactEmail} placeholders={PLACEHOLDER} />
+      {/* <ContactForm action={sendContactEmail} placeholders={PLACEHOLDER} /> */}
     </section>
   );
 }
