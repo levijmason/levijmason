@@ -3,17 +3,17 @@ const { nextui } = require("@nextui-org/react");
 const colors = require("tailwindcss/colors");
 
 const config: Config = {
-  content: [
+content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./ui/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
+],
+theme: {
     colors: {
-      primary: colors.danube,
-      default: colors.athensGray,
+    	primary: colors.danube,
+    	default: colors.athensGray,
       // black: colors.codGray,
       // white: colors.athensGray,
 
@@ -29,7 +29,7 @@ const config: Config = {
         800: "#454545",
         900: "#3d3d3d",
         950: "#070707",
-      },
+    	},
       athensGray: {
         50: "#f6f8f9",
         100: "#f0f2f4",
@@ -42,8 +42,8 @@ const config: Config = {
         800: "#1f2429",
         900: "#191c1f",
         950: "#070808",
-      },
-      danube: {
+    	},
+    	danube: {
         50: "#f3f8fb",
         100: "#e4eef5",
         200: "#cfe2ee",
@@ -55,15 +55,15 @@ const config: Config = {
         800: "#43608a",
         900: "#3a506e",
         950: "#273344",
-      },
+    	},
     },
-  },
-  darkMode: "class",
-  plugins: [
+	},
+	darkMode: "class",
+	plugins: [
     nextui({
-      themes: {
+    	themes: {
         dark: {
-          colors: {
+        	colors: {
             foreground: "#f6f8f9",
             background: "#0C0C0C",
             default: {
