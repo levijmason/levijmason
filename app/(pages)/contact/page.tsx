@@ -16,7 +16,7 @@ export default function Contact() {
     <section className="w-full flex flex-col gap-14 py-12 md:px-16">
       <div className="flex flex-col space-y-4">
         <h2 className="text-4xl font-bold pb-4 pt-8">
-          Interested in getting in touch? 🤝
+            Interested in getting in touch? 🤝
         </h2>
 
         <p>
