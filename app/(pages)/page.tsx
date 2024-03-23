@@ -27,7 +27,7 @@ export default function Home() {
           </Link>{" "}
           and{" "}
           <Link
-            href="/tech"
+            href="/music"
             className="text-lg md:text-xl font-normal underline leading-loose tracking-wide text-foreground hover:text-primary"
           >
             music business
